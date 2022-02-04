@@ -3,29 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-#btn-mas{
+#btn-mas{ /* id asociado con el checkbox, oculta el cuadro de check */
     display: none;
 }
-.container{
+.container{ /*div contenedor del botón principal y los sub botones*/
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 50px;
+    right: 50px;
 }
-.redes a, .btn-mas label{
-    display: block;
-    text-decoration: none;
-    background: #cc2b2b;
-    color: #fff;
-    width: 65px;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
-    transition: all 500ms ease;
+ .redes a, .btn-mas label{ 
+    display: block; /*Muestra las burbujas de manera vertical*/
+    text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
+    background: #be2e2e; /*El color de fondo de la burbuja*/
+    color: #fff; /*El color del icono*/
+    width: 60px; /*Ancho de la burbuja*/
+    height: 60px; /*Alto de la burbuja */
+    line-height: 60px; /*Posición del icono en referencia a la burbuja */
+    text-align: center; /*Justificación del icono dentro de la burbuja */
+    border-radius: 50%; /*Forma del contenedor*/
+    box-shadow: 5px 5px 10px rgba(148, 26, 26, 0.4);/*Sombra del contenedor*/
+    /* transition: all 500ms ease; */
+    transition: all 300ms ease; /*Manera como se anima la forma */
 }
-.redes a:hover{
-    background: #fff;
+.redes a:hover{  /*Manera en que se afecta cuando se pasa el mouse sobre el boton*/
+    background: #fff; 
+    
     color: #cc2b2b;
 }
 .redes a{
