@@ -1,143 +1,231 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #162644;
+    background-color: #f4ca41;
 }
-#btn-ppal{ /* id asociado con el checkbox, oculta el cuadro de check */
+
+#btn-ppal {
+    /* id asociado con el checkbox, oculta el cuadro de check */
     display: none;
 }
-#btn-wsp{ /* id asociado con el checkbox de wsp, oculta el cuadro de check */
+
+#btn-wsp {
+    /* id asociado con el checkbox de wsp, oculta el cuadro de check */
     display: none;
 }
-.container{ /*div contenedor del botón principal y los sub botones*/
+
+.container {
+    /*div contenedor del botón principal y los sub botones*/
     position: fixed;
     bottom: 40px;
     right: 40px;
-    /* border-style: solid; */   
+    width: 150px;
+    border-style: solid;
+    border-color: yellow;
 }
 
-.redes label, .btn-mas label, .wsp a{ /* Vincula las acciones del boton principal, con los botones secundarios */
-    display: block; /*Muestra las burbujas de manera vertical*/
-    text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #be2e2e; /*El color de fondo de la burbuja*/
-    color: #fff; /*El color del icono*/
-    width: 70px; /*Ancho de la burbuja*/
-    height: 70px; /*Alto de la burbuja */
-    line-height: 66px; /*Posición del icono en referencia a la burbuja */
+.redes {
+    border-style: solid;
+    border-color: blue;
+    text-align: center;
+}
+
+.wsp {
+    border-style: solid;
+    border-color: red;
+    display: none;
+}
+
+.redes label,
+.wsp a,
+.redes a {
+    /* Vincula las acciones del boton principal, con los botones secundarios */
+    display: block;
+    /*Muestra las burbujas de manera vertical*/
+    text-decoration: blink;
+    /*Adiciona una linea, encima, debajo o sobre el icono*/
+    background: #be2e2e;
+    /*El color de fondo de la burbuja*/
+    color: #fff;
+    /*El color del icono*/
+    width: 70px;
+    /*Ancho de la burbuja*/
+    height: 70px;
+    /*Alto de la burbuja */
+    line-height: 66px;
+    /*Posición del icono en referencia a la burbuja */
     /*text-transform: none; Modifica el texto a Mayusuculas o Minusculas*/
     overflow: hidden;
     /* white-space: nowrap; */
-    text-align: center; /*Justificación del icono dentro de la burbuja */
-    border-radius: 50%; /*Forma del contenedor*/
+    text-align: center;
+    /*Justificación del icono dentro de la burbuja */
+    border-radius: 50%;
+    /*Forma del contenedor*/
     border-style: solid;
     border-color: #fff;
     border-width: 2px;
     /* box-shadow: 1px 1px 1px 1px rgba(148, 26, 26, 0.4);Sombra del contenedor */
     /* transition: all 500ms ease; */
-    transition: all 300ms ease; /*Manera como se anima la forma */   
+    transition: all 300ms ease;
+    /*Manera como se anima la forma */
 }
-.redes a{
-    display: block; /*Muestra las burbujas de manera vertical*/
-    text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #be2e2e; /*El color de fondo de la burbuja*/
-    color: #fff; /*El color del icono*/
-    width: 65px; /*Ancho de la burbuja*/
-    height: 65px; /*Alto de la burbuja */
-    line-height: 63px; /*Posición del icono en referencia a la burbuja */
-    /* overflow: hidden; */
-    text-align: center; /*Justificación del icono dentro de la burbuja */
-    border-radius: 50%; /*Forma del contenedor*/
+
+.btn-mas label {
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-decoration: blink;
+    background: #be2e2e;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 66px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50%;
     border-style: solid;
     border-color: #fff;
     border-width: 2px;
-    transition: all 400ms ease; /*Manera como se anima la forma */
-    
+    transition: all 300ms ease;
+    font-size: 33px;
 }
-.wsp a{
-    display: hidden; /*Muestra las burbujas de manera vertical*/
-    text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #be2e2e; /*El color de fondo de la burbuja*/
-    color: #fff; /*El color del icono*/
-    width: 65px; /*Ancho de la burbuja*/
-    height: 65px; /*Alto de la burbuja */
-    line-height: 63px; /*Posición del icono en referencia a la burbuja */
+
+.redes label {
+    display: block;
+    /*Muestra las burbujas de manera vertical*/
+    text-decoration: blink;
+    /*Adiciona una linea, encima, debajo o sobre el icono*/
+    background: #be2e2e;
+    /*El color de fondo de la burbuja*/
+    color: #fff;
+    /*El color del icono*/
+    width: 65px;
+    /*Ancho de la burbuja*/
+    height: 65px;
+    /*Alto de la burbuja */
+    line-height: 63px;
+    /*Posición del icono en referencia a la burbuja */
     /* overflow: hidden; */
-    text-align: center; /*Justificación del icono dentro de la burbuja */
-    border-radius: 50%; /*Forma del contenedor*/
+    text-align: center;
+    /*Justificación del icono dentro de la burbuja */
+    border-radius: 50%;
+    /*Forma del contenedor*/
     border-style: solid;
     border-color: #fff;
     border-width: 2px;
-    transition: all 400ms ease; /*Manera como se anima la forma */
-    
+    transition: all 400ms ease;
+    /*Manera como se anima la forma */
 }
-.btn-mas label:hover{
-    background: #fff; 
+
+
+/* .wsp a {
+    display: hidden;
+    /*Muestra las burbujas de manera vertical
+    text-decoration: blink;
+    /*Adiciona una linea, encima, debajo o sobre el icono
+    background: #be2e2e;
+    /*El color de fondo de la burbuja
+    color: #fff;
+    /*El color del icono
+    width: 65px;
+    /*Ancho de la burbuja
+    height: 65px;
+    /*Alto de la burbuja 
+    line-height: 63px;
+    /*Posición del icono en referencia a la burbuja
+    /* overflow: hidden; 
+    text-align: center;
+    /*Justificación del icono dentro de la burbuja 
+    border-radius: 50%;
+    /*Forma del contenedor
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+    transition: all 400ms ease;
+    /*Manera como se anima la forma 
+} */
+
+.btn-mas {
+    text-align: center;
+    border-color: #be2e2e;
+    border-style: solid;
+}
+
+.btn-mas label:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #cc2b2b;
+    border-color: #be2e2e;
+    font-size: 33px;
+}
+
+.redes a:hover {
+    /*Manera en que se afecta cuando se pasa el mouse sobre el boton*/
+    background: #fff;
     color: #cc2b2b;
     border-color: #be2e2e;
 }
-.redes a:hover{  /*Manera en que se afecta cuando se pasa el mouse sobre el boton*/
-    background: #fff; 
-    color: #cc2b2b;
-    border-color: #be2e2e;
-}
-.redes a, .redes label{
+
+.redes a,
+.redes label {
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
 }
-#btn-ppal:checked~ .redes a{  /* Vincula el action del check con el div de redes */
+
+#btn-ppal:checked~.redes a {
+    /* Vincula el action del check con el div de redes */
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible;
 }
-#btn-wsp:checked~ .wsp a{  /* Vincula el action del check de wsp con el div de wsp */
+
+#btn-ppal:checked~.redes label {
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible;
 }
-#btn-ppal:checked~ .redes label{
-    margin-bottom: 10px;
-    opacity: 1;
-    visibility: visible;
-}
-.redes label{
+
+.redes label {
     cursor: pointer;
 }
-.redes label:hover{
+
+.redes label:hover {
     cursor: pointer;
     background: #ffffff;
     color: #cc2b2b;
     border-color: #be2e2e;
     /* font-size: 33px; */
 }
-.btn-mas label{
+
+
+/* .btn-mas label {
     cursor: pointer;
     background: #f44141;
     font-size: 33px;
-}
-.btn-mas label:hover{
-    cursor: pointer;
-    background: #ffffff;
-    color: #cc2b2b;
-    font-size: 33px;
-}
-#btn-ppal:checked ~ .btn-mas label{ 
-    transform: rotate(180deg); 
+} */
+
+#btn-ppal:checked~.btn-mas label {
+    transform: rotate(180deg);
     font-size: 35px;
 }
- .btn-mas p{    /* Controla el aviso debajo del botón principal */
+
+.btn-mas p {
+    /* Controla el aviso debajo del botón principal */
     text-align: center;
     color: #fff;
     font-size: 18px;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-.wsp h5{
+
+.wsp h5 {
     background: #f44141;
     font-size: 10px;
     cursor: pointer;
     visibility: visible;
 }
+
 
 /* .wa-pre::before {
     content: 'Hola';
