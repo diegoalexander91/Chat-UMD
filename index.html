@@ -16,27 +16,67 @@
     <div class="container">
         <input type="checkbox" id="btn-ppal">
         <input type="checkbox" id="btn-wsp">
+        <input type="checkbox" id="btn-chat">
+
         <div class="wsp">
-            <a href="https://wa.me/573057341221">
+            <a class="fab fa-whatsapp" href="https://wa.me/573057341221"></a>
+            <div class="modalidad-pre">
                 <h5>Presencial</h5>
-            </a>
-            <a href="https://bit.ly/3i2Ys6l">
+            </div>
+            <a class="fab fa-whatsapp" href="https://bit.ly/3i2Ys6l"></a>
+            <div class="modalidad-uvd">
                 <h5>Virtual</h5>
-            </a>
-        </div>
-        <div class="redes">
-            <label for="btn-wsp" class="fab fa-whatsapp"></label>
-            <!-- <a href="https://wa.me/573057341221" class="fab fa-whatsapp">Whats</a> -->
-            <a href="http://localhost/Webchat/index.html" class="fas fa-comment-dots"></a>
-            <!-- <a href="https://bit.ly/3i2Ys6l" class="fab fa-whatsapp"></a> -->
+            </div>
         </div>
 
+        <div class="chat">
+            <a class="fas fa-comment-dots" href="https://webchat.uniminuto.edu"></a>
+            <div class="chat-modalidad-pre">
+                <h5>Presencial</h5>
+            </div>
+            <a class="fas fa-comment-dots" href="https://virtual.uniminuto.edu/"></a>
+            <div class="chat-modalidad-uvd">
+                <h5>Virtual</h5>
+            </div>
+        </div>
+
+        <div class="redes">
+            <label for="btn-wsp" class="fab fa-whatsapp"></label>
+            <label for="btn-chat" class="fas fa-comment-dots"></label>
+        </div>
 
         <div class="btn-mas">
             <label for="btn-ppal" class="fas fa-headphones"></label>
             <p>Contacto</p>
         </div>
     </div>
+
+    <script>
+        var btnPpal = document.getElementById('btn-ppal');
+        var btnWhat = document.getElementById('btn-wsp');
+        var btnChat = document.getElementById('btn-chat');
+        btnPpal.addEventListener('change', cambioEstadoCheckPpal);
+        btnWhat.addEventListener('change', cambioEstadoCheckWhat);
+        btnChat.addEventListener('change', cambioEstadoCheckChat);
+
+        function cambioEstadoCheckPpal() {
+            if (this.checked) {
+                console.log("Se presionó el check");
+                document.getElementById("btn-wsp").checked = false;
+                document.getElementById("btn-chat").checked = false;
+            }
+        }
+        function cambioEstadoCheckWhat() {
+            if (this.checked) {
+                document.getElementById("btn-chat").checked = false;
+            }
+        }
+        function cambioEstadoCheckChat() {
+            if (this.checked) {
+                document.getElementById("btn-wsp").checked = false;
+            }
+        }
+    </script>
 </body>
 
 </html>
