@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4ca41;
+    background-color: #0f0;
 }
 
 #btn-ppal {
@@ -41,15 +41,15 @@
 .wsp a:hover {
     cursor: pointer;
     background: #fff;
-    color: #be2e2e;
-    border-color: #be2e2e;
+    color: #ffc300;
+    border-color: #ffc300;
     /* font-size: 33px; */
 }
 .chat a:hover {
     cursor: pointer;
     background: #fff;
-    color: #be2e2e;
-    border-color: #be2e2e;
+    color: #ffc300;
+    border-color: #ffc300;
     /* font-size: 33px; */
 }
 
@@ -103,7 +103,7 @@
     transform: translate(-150%, 350%);
     display: block;
     text-decoration: blink;
-    background: #be2e2e; /*El color de fondo de la burbuja*/
+    background: #ffc300; /*El color de fondo de la burbuja*/
     color: #fff; /*El color del icono*/
     width: 50px;     /*Ancho de la burbuja*/
     height: 50px;     /*Alto de la burbuja */
@@ -124,7 +124,7 @@
     transform: translate(-150%, 200%);
     display: block;
     text-decoration: blink;
-    background: #be2e2e; /*El color de fondo de la burbuja*/
+    background: #ffc300; /*El color de fondo de la burbuja*/
     color: #fff; /*El color del icono*/
     width: 50px;     /*Ancho de la burbuja*/
     height: 50px;     /*Alto de la burbuja */
@@ -144,7 +144,7 @@
 .redes label { /* Vincula las acciones del boton principal, con los botones secundarios */ 
     display: block; /*Muestra las burbujas de manera vertical*/
     text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #be2e2e; /*El color de fondo de la burbuja*/
+    background: #ffc300; /*El color de fondo de la burbuja*/
     color: #fff; /*El color del icono*/
     width: 70px;     /*Ancho de la burbuja*/
     height: 70px;     /*Alto de la burbuja */
@@ -166,7 +166,7 @@
     text-align: center;
     margin: auto;
     text-decoration: blink;
-    background: #be2e2e;
+    background: #ffc300;
     color: #fff;
     width: 70px;
     height: 70px;
@@ -186,7 +186,7 @@
     /*Muestra las burbujas de manera vertical*/
     text-decoration: blink;
     /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #be2e2e;
+    background: #ffc300;
     /*El color de fondo de la burbuja*/
     color: #fff;
     /*El color del icono*/
@@ -216,8 +216,8 @@
 .btn-mas label:hover {
     cursor: pointer;
     background: #fff;
-    color: #cc2b2b;
-    border-color: #be2e2e;
+    color: #ffc300;
+    border-color: #ffc300;
 }
 
 .redes label {
@@ -239,8 +239,8 @@
 .redes label:hover {
     cursor: pointer;
     background: #ffffff;
-    color: #cc2b2b;
-    border-color: #be2e2e;
+    color: #ffc300;
+    border-color: #ffc300;
     /* font-size: 33px; */
 }
 
