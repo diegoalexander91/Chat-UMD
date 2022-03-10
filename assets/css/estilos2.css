@@ -5,18 +5,18 @@
     background-color: #0f0;
 }
 
-#btn-ppal {
+#btn-ppal-chatbot {
     /* id asociado con el checkbox, oculta el cuadro de check */
     display: none;
 }
-#btn-wsp {
+#btn-wsp-chatbot {
     /* id asociado con el checkbox de wsp, oculta el cuadro de check */
     display: none;
 }
-#btn-chat{
+#btn-chat-chatbot{
     display: none;
 }
-.container {
+.container-chatbot {
     /*div contenedor del botón principal y los sub botones*/
     position: fixed;
     bottom: 40px;
@@ -25,35 +25,35 @@
     /* border-style: solid;
     border-color: yellow; */
 }
-.redes {
+.redes-chatbot {
     /* border-style: solid;
     border-color: blue; */
     text-align: center; 
 }
-.wsp {
+.wsp-chatbot {
     display: none;
 }
-.chat{
+.chat-chatbot {
     display: none;
     /* border-style: solid;
     border-color: blue;  */
 }
-.wsp a:hover {
+.wsp-chatbot a:hover {
     cursor: pointer;
     background: #fff;
-    color: #ffc300;
-    border-color: #ffc300;
+    color: #be2e2e;
+    border-color: #be2e2e;
     /* font-size: 33px; */
 }
-.chat a:hover {
+.chat-chatbot a:hover {
     cursor: pointer;
     background: #fff;
-    color: #ffc300;
-    border-color: #ffc300;
+    color: #be2e2e;
+    border-color: #be2e2e;
     /* font-size: 33px; */
 }
 
-#btn-chat:checked~.chat{
+#btn-chat-chatbot:checked~.chat-chatbot{
     display: block;
 }
 
@@ -61,49 +61,49 @@
     display: none;
 } */
 
-#btn-wsp:checked~.wsp{
+#btn-wsp-chatbot:checked~.wsp-chatbot{
     display: block;
 }
 /* #btn-wsp:checked~.wsp{
     display: none;
 } */
 
-.chat-modalidad-pre{
+.chat-modalidad-pre-chatbot{
     transform: translate(-130%, 880%);
     text-align: right;
     color: #fff;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.chat-modalidad-uvd{
+.chat-modalidad-uvd-chatbot{
     transform: translate(-130%, 940%);
     text-align: right;
     color: #fff;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.modalidad-pre{
+.modalidad-pre-chatbot{
     transform: translate(-130%, 380%);
     text-align: right;
     color: #fff;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-.modalidad-uvd{
+.modalidad-uvd-chatbot{
     transform: translate(-130%, 400%);
     text-align: right;
     color: #fff;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-#btn-ppal:not(:checked)~.wsp, 
-#btn-ppal:not(:checked)~.chat { /*Oculta los botones de whatsapp y chat UVD y Presencial al quitar el check del botón ppal*/
+#btn-ppal-chatbot:not(:checked)~.wsp-chatbot, 
+#btn-ppal-chatbot:not(:checked)~.chat-chatbot { /*Oculta los botones de whatsapp y chat UVD y Presencial al quitar el check del botón ppal*/
     display: none;
 }
 
-.chat a{
+.chat-chatbot a{
     transform: translate(-150%, 350%);
     display: block;
     text-decoration: blink;
-    background: #ffc300; /*El color de fondo de la burbuja*/
+    background: #be2e2e; /*El color de fondo de la burbuja*/
     color: #fff; /*El color del icono*/
     width: 50px;     /*Ancho de la burbuja*/
     height: 50px;     /*Alto de la burbuja */
@@ -120,11 +120,11 @@
     transition: all 300ms ease; /* transition: all 500ms ease; */
 }
 
-.wsp a {
+.wsp-chatbot a {
     transform: translate(-150%, 200%);
     display: block;
     text-decoration: blink;
-    background: #ffc300; /*El color de fondo de la burbuja*/
+    background: #be2e2e; /*El color de fondo de la burbuja*/
     color: #fff; /*El color del icono*/
     width: 50px;     /*Ancho de la burbuja*/
     height: 50px;     /*Alto de la burbuja */
@@ -141,10 +141,10 @@
     transition: all 300ms ease; /* transition: all 500ms ease; */
 }
 
-.redes label { /* Vincula las acciones del boton principal, con los botones secundarios */ 
+.redes-chatbot label { /* Vincula las acciones del boton principal, con los botones secundarios */ 
     display: block; /*Muestra las burbujas de manera vertical*/
     text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #ffc300; /*El color de fondo de la burbuja*/
+    background: #be2e2e; /*El color de fondo de la burbuja*/
     color: #fff; /*El color del icono*/
     width: 70px;     /*Ancho de la burbuja*/
     height: 70px;     /*Alto de la burbuja */
@@ -161,12 +161,12 @@
     transition: all 300ms ease; /* transition: all 500ms ease; */
 }
 
-.btn-mas label {
+.btn-mas-chatbot label {
     display: block;
     text-align: center;
     margin: auto;
     text-decoration: blink;
-    background: #ffc300;
+    background: #be2e2e;
     color: #fff;
     width: 70px;
     height: 70px;
@@ -181,12 +181,12 @@
     font-size: 33px;
 }
 
-.redes label {
+.redes-chatbot label {
     display: block;
     /*Muestra las burbujas de manera vertical*/
     text-decoration: blink;
     /*Adiciona una linea, encima, debajo o sobre el icono*/
-    background: #ffc300;
+    background: #be2e2e;
     /*El color de fondo de la burbuja*/
     color: #fff;
     /*El color del icono*/
@@ -208,39 +208,39 @@
     /*Manera como se anima la forma */
 }
 
-.btn-mas {
+.btn-mas-chatbot {
     text-align: center;
     /* border-color: #be2e2e;
     border-style: solid; */
 }
-.btn-mas label:hover {
+.btn-mas-chatbot label:hover {
     cursor: pointer;
     background: #fff;
-    color: #ffc300;
-    border-color: #ffc300;
+    color: #cc2b2b;
+    border-color: #be2e2e;
 }
 
-.redes label {
+.redes-chatbot label {
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
 }
 
-#btn-ppal:checked~.redes label {
+#btn-ppal-chatbot:checked~.redes-chatbot label {
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible;
 }
 
-.redes label {
+.redes-chatbot label {
     cursor: pointer;
 }
 
-.redes label:hover {
+.redes-chatbot label:hover {
     cursor: pointer;
     background: #ffffff;
-    color: #ffc300;
-    border-color: #ffc300;
+    color: #cc2b2b;
+    border-color: #be2e2e;
     /* font-size: 33px; */
 }
 
@@ -251,12 +251,12 @@
     font-size: 33px;
 } */
 
-#btn-ppal:checked~.btn-mas label {
+#btn-ppal-chatbot:checked~.btn-mas-chatbot label {
     transform: rotate(180deg);
     font-size: 35px;
 }
 
-.btn-mas p {
+.btn-mas-chatbot p {
     /* Controla el aviso debajo del botón principal */
     text-align: center;
     color: #fff;

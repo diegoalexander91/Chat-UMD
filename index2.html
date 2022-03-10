@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://webchat.uniminuto.edu/Webchat-UMD/estilos.css">
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        function addElement() {
+            var newDiv = document.createElement("div");
+            newDiv.innerHTML = "<div class='menu'>\
+                <div class='menu-content'>\
+                    <span class='menu-item menu1' id='menu'>\
+                        <img class='img3' src='https://webchat.uniminuto.edu/assets/img/soporte.svg'>\
+                        </span><a href='https://wa.me/573057341221' target='_blank' title='Whatsapp' class='menu-item menu2'><img class='img3' src='https://webchat.uniminuto.edu/assets/img/whatsapp.svg' alt='Whatsapp'></a><a href='https://webchat.uniminuto.edu/index.html' title='Chat' class='menu-item menu2'><img class='img3' src='https://webchat.uniminuto.edu/assets/img/chat.svg' alt='Chat'></a><a href='#' title='Videollamada' class='menu-item menu2'><img class='img3' src='https://webchat.uniminuto.edu/assets/img/video.svg' alt='Videollamada'></a></div></div>";
+            var currentDiv = document.getElementById("chatweb");
+            document.body.insertBefore(newDiv, currentDiv);
+        }
+    </script>
+
+</head>
+
+<body onload="addElement()">
+    <div id="chatweb"></div>
+</body>
+
+</html>
